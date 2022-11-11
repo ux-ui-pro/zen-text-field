@@ -1,0 +1,54 @@
+.floating-label {
+	display: inline-block;
+	max-width: calc(100% - 3rem);
+	right: initial; left: 1.7rem;
+	pointer-events: none;
+	font-family: var(--font-family);
+	font-size: var(--font-size-field);
+	font-weight: var(--font-weight);
+	letter-spacing: var(--letter-spacing);
+	line-height: 2.3rem;
+	color: var(--c-text);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	transform-origin: left top;
+	transition: transform var(--transition),
+				color var(--transition);
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: text;
+	overflow: hidden;
+
+	.input & {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.textarea & {
+		top: 1.3rem;
+	}
+
+	.input--focused &,
+	.input--filled & {
+		transform: translateY(-3.3rem) scale(0.75);
+	}
+
+	.input--focused.input--leading-icon &,
+	.input--filled.input--leading-icon & {
+		transform: translateY(-3.3rem) translateX(-2.7rem) scale(0.75);
+	}
+
+	.input--focused.input--dense &,
+	.input--filled.input--dense & {
+		transform: translateY(-2.7rem) scale(0.75);
+	}
+
+	.textarea--focused &,
+	.textarea--filled & {
+		transform: translateY(-2.2rem) scale(0.75);
+	}
+}
+
+

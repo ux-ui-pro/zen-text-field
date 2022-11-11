@@ -1,0 +1,26 @@
+.text-field-container {
+	--c-inactive: DarkGray;
+	--c-focused: hsla(214, 94%, 43%, 1);
+	--c-activated: Gray;
+	--c-hover: DimGray;
+	--c-error: hsla(0, 100%, 40%, 1);
+	--c-disabled: Silver;
+	--c-text: SlateGrey;
+	--c-placeholder: hsla(0,0, 74%, 1);
+
+	--font-family: 'Roboto', sans-serif;
+	--font-size-field: 1.6rem;
+	--font-size-helper: 1.2rem;
+	--font-weight: 400;
+	--line-height: 2.4rem;
+	--letter-spacing: .009375em;
+
+	--border-color: var(--c-inactive);
+	--border-size-inactive: .1rem;
+	--border-size-active: .2rem;
+	--border-radius: .6rem;
+
+	--transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

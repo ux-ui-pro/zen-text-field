@@ -1,0 +1,83 @@
+.textarea {
+	overflow: visible;
+	display: inline-flex;
+	position: relative;
+	will-change: opacity, transform, color;
+	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	min-height: 8rem;
+
+	textarea {
+		resize: none;
+		background: none;
+		border: none;
+		border-radius: 0;
+		appearance: none;
+		width: 100%; height: auto;
+		display: flex;
+		z-index: 1;
+		margin: .8rem .1rem .2rem 0;
+		padding: 0 1.5rem .4rem;
+		font-family: var(--font-family);
+		font-size: var(--font-size-field);
+		line-height: var(--line-height);
+		font-weight: var(--font-weight);
+		letter-spacing: var(--letter-spacing);
+		color: var(--c-text);
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&:hover {
+		&:not(.textarea--error):not(.textarea--disabled):not(.textarea--focused) {
+			--border-color: var(--c-hover);
+		}
+	}
+
+	&--focused {
+		--border-color: var(--c-focused);
+
+		label {
+			color: var(--c-focused);
+		}
+
+		textarea {
+			caret-color: var(--c-focused);
+		}
+	}
+
+	&--disabled {
+		--border-color: var(--c-disabled);
+
+		label,
+		textarea,
+		+ .textarea-helper {
+			color: var(--c-disabled);
+		}
+	}
+
+	&--error {
+		--border-color: var(--c-error);
+
+		textarea {
+			caret-color: var(--c-error);
+		}
+
+		label,
+		+ .textarea-helper {
+			color: var(--c-error);
+		}
+
+		label.floating-label--required::after {
+			margin-left: .1rem;
+			font-size: 1.8rem;
+			line-height: 0;
+			content: '*';
+		}
+	}
+}
+
+

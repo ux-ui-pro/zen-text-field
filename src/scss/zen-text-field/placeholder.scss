@@ -1,0 +1,44 @@
+.input,
+.textarea {
+	& ::-webkit-input-placeholder {
+		color: var(--c-placeholder);
+		opacity: 0;
+		transition: opacity var(--transition);
+	}
+
+	& :focus::-webkit-input-placeholder {
+		opacity: .65;
+	}
+
+	& :-ms-input-placeholder {
+		color: var(--c-placeholder);
+		opacity: 0;
+		transition: opacity var(--transition);
+	}
+
+	& :focus:-ms-input-placeholder {
+		opacity: .65;
+	}
+
+	& ::-moz-placeholder {
+		color: var(--c-placeholder);
+		opacity: 0;
+		transition: opacity var(--transition);
+	}
+
+	& :focus::-moz-placeholder {
+		opacity: .65;
+	}
+
+	& :-moz-placeholder {
+		color: var(--c-placeholder);
+		opacity: 0;
+		transition: opacity var(--transition);
+	}
+
+	& :focus:-moz-placeholder {
+		opacity: .65;
+	}
+}
+
+

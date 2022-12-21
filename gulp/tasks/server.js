@@ -7,5 +7,3 @@ export const server = () => {
         port: '7777'
     })
 }
-
-

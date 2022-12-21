@@ -1,4 +1,4 @@
-import { ZenInput, ZenTextarea } from './modules/zen-text-field.js'
+import { ZenInput, ZenTextarea } from './zen-text-field.js'
 
 ZenInput()
 ZenTextarea()

@@ -8,7 +8,7 @@ import groupCssMediaQueries from 'gulp-group-css-media-queries'
 const sass = gulpSass(dartSass)
 
 export const scss = () => {
-    return app.gulp.src(app.path.src.scss, {sourcemap: app.projectDev})
+    return app.gulp.src(app.path.src.scss, { sourcemap: app.projectDev })
         .pipe(sass({
             outputStyle: 'compressed'
         }))
@@ -31,5 +31,3 @@ export const scss = () => {
         .pipe(app.gulp.dest(app.path.build.css))
         .pipe(app.plugins.browserSync.stream())
 }
-
-

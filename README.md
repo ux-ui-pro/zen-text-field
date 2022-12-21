@@ -16,16 +16,28 @@
 </div>
 <br>
 
+### Installation
+```javascript
+$ yarn add zen-text-field
+```
+or
+```javascript
+$ npm i zen-text-field
+```
+<br>
+
 ### Import
 ```javascript
 import { ZenInput, ZenTextarea } from 'zen-text-field'
 ```
+<br>
 
 ### SCSS
 <sup>Import files if your bundler supports SCSS</sup>
 ```SCSS
 @import "node_modules/zen-text-field/src/scss";
 ```
+<br>
 
 ### Build your text field
 ```HTML

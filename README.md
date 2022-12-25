@@ -20,7 +20,7 @@
 ```javascript
 $ yarn add zen-text-field
 ```
-or
+<sup>or</sup>
 ```javascript
 $ npm i zen-text-field
 ```
@@ -42,17 +42,17 @@ import { ZenInput, ZenTextarea } from 'zen-text-field'
 ### Build your text field
 ```HTML
 <div class="text-field-container">
-    <div class="input">
-        <label for="i" class="floating-label">Label</label>
-        <input id="i" type="text">
-    </div>
+	<div class="input">
+		<label for="i" class="floating-label">Label</label>
+		<input id="i" type="text">
+	</div>
 </div>
 
 <div class="text-field-container">
-    <div class="textarea">
-        <label for="t" class="floating-label">Placeholder</label>
-        <textarea id="t"></textarea>
-    </div>
+	<div class="textarea">
+		<label for="t" class="floating-label">Placeholder</label>
+		<textarea id="t"></textarea>
+	</div>
 </div>
 ```
 

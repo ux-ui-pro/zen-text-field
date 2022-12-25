@@ -1,13 +1,13 @@
 .floating-label {
 	display: inline-block;
-	max-width: calc(100% - 3rem);
-	right: initial; left: 1.7rem;
+	max-width: calc(100% - 30px);
+	right: initial; left: 17px;
 	pointer-events: none;
 	font-family: var(--font-family);
 	font-size: var(--font-size-field);
 	font-weight: var(--font-weight);
 	letter-spacing: var(--letter-spacing);
-	line-height: 2.3rem;
+	line-height: 23px;
 	color: var(--c-text);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -27,26 +27,26 @@
 	}
 
 	.textarea & {
-		top: 1.3rem;
+		top: 13px;
 	}
 
 	.input--focused &,
 	.input--filled & {
-		transform: translateY(-3.3rem) scale(0.75);
+		transform: translateY(-33px) scale(.75);
 	}
 
 	.input--focused.input--leading-icon &,
 	.input--filled.input--leading-icon & {
-		transform: translateY(-3.3rem) translateX(-2.7rem) scale(0.75);
+		transform: translateY(-33px) translateX(-27px) scale(.75);
 	}
 
 	.input--focused.input--dense &,
 	.input--filled.input--dense & {
-		transform: translateY(-2.7rem) scale(0.75);
+		transform: translateY(-27px) scale(.75);
 	}
 
 	.textarea--focused &,
 	.textarea--filled & {
-		transform: translateY(-2.2rem) scale(0.75);
+		transform: translateY(-22px) scale(.75);
 	}
 }

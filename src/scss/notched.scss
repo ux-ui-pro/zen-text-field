@@ -9,7 +9,7 @@
 	pointer-events: none;
 
 	&__leading {
-		width: 1.2rem; height: 100%;
+		width: 12px; height: 100%;
 		pointer-events: none;
 		border-top: var(--border-size-inactive) solid;
 		border-right: none;
@@ -22,7 +22,7 @@
 	&__notch {
 		flex: 0 0 auto;
 		width: auto; height: 100%;
-		max-width: calc(100% - 1.2rem * 2);
+		max-width: calc(100% - 12px * 2);
 		pointer-events: none;
 		border-top: var(--border-size-inactive) solid;
 		border-bottom: var(--border-size-inactive) solid;

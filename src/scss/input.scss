@@ -4,23 +4,23 @@
 	position: relative;
 	will-change: opacity, transform, color;
 	border-radius: var(--border-radius) var(--border-radius) 0 0;
-	height: 4.8rem;
+	height: 48px;
 
 	input {
 		display: flex;
-		padding: 0 1.5rem;
+		padding: 0 15px;
 		z-index: 1;
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		align-self: flex-end;
-		width: 100%; height: 4.8rem;
+		width: 100%; height: 48px;
 		border: none;
 		border-radius: 0;
 		background: none;
 		appearance: none;
 		font-family: var(--font-family);
 		font-size: var(--font-size-field);
-		line-height: 2.3rem;
+		line-height: 23px;
 		font-weight: var(--font-weight);
 		letter-spacing: var(--letter-spacing);
 		color: var(--c-text);
@@ -31,10 +31,10 @@
 	}
 
 	&--dense {
-		height: 3.6rem;
+		height: 36px;
 
 		input {
-			height: 3.6rem;
+			height: 36px;
 		}
 	}
 
@@ -89,8 +89,8 @@
 		}
 
 		label.floating-label--required::after {
-			margin-left: .1rem;
-			font-size: 1.8rem;
+			margin-left: 1px;
+			font-size: 18px;
 			line-height: 0;
 			content: '*';
 		}
@@ -104,8 +104,7 @@
 	/* icons */
 
 	.input__icon {
-		width: 2.4rem;
-		height: 2.4rem;
+		width: 24px; height: 24px;
 	}
 
 	&.input--leading-icon .input__icon {
@@ -124,56 +123,56 @@
 		}
 
 		input {
-			padding-left: 1.6rem;
-			padding-right: 4.8rem;
+			padding-left: 16px;
+			padding-right: 48px;
 		}
 	}
 
 	&.input--leading-icon {
 		input {
-			padding-left: 4.8rem;
-			padding-right: 1.6rem;
+			padding-left: 48px;
+			padding-right: 16px;
 		}
 
 		&.input--trailing-icon input {
-			padding-left: 4.8rem;
-			padding-right: 4.8rem;
+			padding-left: 48px;
+			padding-right: 48px;
 		}
 	}
 
 	&.input--trailing-icon .input__icon {
 		left: initial;
-		right: 1.2rem;
+		right: 12px;
 	}
 
 	&.input--leading-icon {
 		.input__icon {
-			left: 1.2rem;
+			left: 12px;
 			right: initial;
 		}
 
 		&.input--trailing-icon .input__icon ~ .input__icon {
-			right: 1.2rem;
+			right: 12px;
 			left: auto;
 		}
 
 		label {
-			left: 4.4rem;
+			left: 44px;
 			right: initial;
 		}
 	}
 
 	&.input--trailing-icon label {
-		max-width: calc(100% - 6.6rem);
+		max-width: calc(100% - 66px);
 	}
 
 	&.input--leading-icon {
 		label {
-			max-width: calc(100% - 6.6rem);
+			max-width: calc(100% - 66px);
 		}
 
 		&.input--trailing-icon label {
-			max-width: calc(100% - 8.4rem);
+			max-width: calc(100% - 84px);
 		}
 	}
 }
